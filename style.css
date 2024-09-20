@@ -175,8 +175,8 @@ header {
     font-size: 50px;
     color: #ececec;
     text-shadow: #000000 10px 10px 10px;
-    text-align: center;   
-    margin-bottom: 40px;    
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 
@@ -188,7 +188,7 @@ header {
 }
 
 #apresentacao p:hover {
-    transform:translateY(-10px);
+    transform: translateY(-10px);
     font-weight: 700px;
 }
 
@@ -198,43 +198,62 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color:#ececec;
+    background-color: #331d4a;
     padding: 20px 30px;
-    
-}
 
-.cards:hover {
-    
+    /*Fundo do texto h2*/
 }
 
 .cards h2 {
-    font-size: 50px;
+    font-size: 60px;
     margin-bottom: 10px;
-    
-}
-
-.grupo-cards {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    gap: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ececec;
+    /*Titulo, apenas texto */
 }
 
 .card-container {
     display: flex;
-    justify-content: space-between; /* Alinha os cards com espaço entre eles */
-    padding: 20px; /* Ajuste o espaço ao redor */
-  }
-  
-  .card {
-    background-color: #f0f0f0; /* Cor de fundo dos cards */
-    border: 1px solid #ccc; /* Borda dos cards */
-    padding: 20px; /* Espaçamento interno */
-    width: 30%; /* Largura dos cards */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional */
-  }
-  
+    justify-content: space-between;
+    /* Alinha os cards com espaço entre eles */
+    padding: 0 20 0 20;
+    background-color: #331d4a;
+
+    /* Espaço atras dos cards */
+}
+
+.card h3 {
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    
+
+
+}
+
+.card {
+    background-color: #afcacc;
+    /* Cor de fundo dos cards */
+    border: 3px solid #000000;
+    /* Borda dos cards */
+    padding:10px;
+    /* Espaçamento interno */
+    width: 30%;
+    /* Largura dos cards */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Cards */
+
+}
+
+.card button {
+    border-radius: 7px;
+    /* Arredondamento das bordas */
+    font-size: 23px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 
 .card:hover {
     opacity: 1;
@@ -244,26 +263,19 @@ header {
 .card img {
     width: 100%;
     height: 250px;
+
+    /* Apenas a Imagem */
 }
 
 .card img:hover {
     filter: saturate(2);
 }
 
-.card-info {
-    margin: 20px 10px;
-}
-
-.card h3 {
-    font-size: 30px;
-    font-weight:  700;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
 .card p {
     height: 100px;
-    font-size: 14px;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* Paragrafo dentro do card */
 }
 
 .card-button {
