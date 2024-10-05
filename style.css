@@ -1,3 +1,18 @@
+/* Define variáveis CSS para cores que podem ser reutilizadas */
+
+:root {
+    --branco: #ffffff;
+    --preto: #000000;
+    --azul: #0000ff;
+    --verde: #00ff00;
+    --vermelho: #ff0000;
+    --cinza: #c1c1c1;
+    --chumbo: #696969;
+    --smoke: #3b3b38;
+}
+    
+
+
 * {
     margin: 0;
     padding: 0px;
@@ -246,18 +261,25 @@ header {
 }
 
 .card button {
+    width: 150px;
+    height: 40px;
+    font-weight: 700;
     border-radius: 7px;
     /* Arredondamento das bordas */
     font-size: 23px;
     padding-left: 5px;
     padding-right: 5px;
+    cursor: pointer;
+    transition: all 1s ease;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
-.card:hover {
+
+.card button:hover {
     opacity: 1;
-    transform: translateX(-20px);
+    background-color: #000000;
+    color: #ececec;
 }
 
 .card img {
@@ -299,10 +321,157 @@ header {
     background-color: #000000;
     color: #ececec;
 }
-
-footer {
-    height: 400px;
-    border-top: 3px solid #000000;
-    background-color: #000000;
-    color: #ececec;
+.modalidade { /*fundo volei*/
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 600px;
+    padding: 0 100px 0 0;
+    gap: 30px;
+    border-top: 2px solid var(--preto);
+    opacity: 0.8;
+    transition: all 1s ease;
 }
+
+.modalidade {
+    opacity: 1;
+}
+
+.modalidade img {
+    height: 100%;
+}
+
+.modalidade img:hover {
+    filter: saturate(2);
+    /* Aumenta a saturação em 200% */
+}
+
+.modalidade-texto {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modalidade-texto h2 {
+    font-weight: 700;
+    font-size: 100px;
+    -webkit-text-stroke: 3px var(--preto);
+    /* Cor e espessura da borda ao redor do texto */
+    color: transparent;
+}
+
+.modalidade-texto h2:hover {
+    color: black;
+    text-shadow: 2px 2px 2px var(--cinza);
+}
+
+.modalidade p {
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 26px;
+}
+
+.modalidade-texto h3 {
+    font-weight: 600;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.modalidade-texto ol {
+    margin-left: 24px;
+    font-size: 20px;
+    margin-left: 80px;
+}
+
+.modalidade-texto button {
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 40px;
+    background-color: var(--branco);
+    color: var(--preto);
+    border: 2px solid var(--preto);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px var(--chumbo);
+    font-size: 16px;
+    transition: all 1s ease;
+}
+
+.modalidade-texto button:hover {
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+/* ----------------------------------- futebol --------------------------------------*/
+#futebol {
+    background:#32CD32;
+}
+
+/* ----------------------------------- natacao --------------------------------------*/
+#natacao {
+    background: #40E0D0;
+}
+
+/* ----------------------------------- volei --------------------------------------*/
+#volei {
+    background: #FFFF00;
+}
+
+/* ----------------------------------- basquete --------------------------------------*/
+#basquete {
+    background: #FFA500;
+}
+
+/* ----------------------------------- atletismo --------------------------------------*/
+#atletismo {
+    background: #FF4500;
+}
+
+#comparacao{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--branco);
+    color: var(--preto);
+    background-color: #E0F7FA;
+    border: solid var(--preto)
+
+   }
+   #comparacao h2{
+    margin-bottom: 20px;
+    font-size: 32px;
+    text-shadow: 3px 3px 3px var(--cinza);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   #comparacao table{
+    width: 70%;
+    border-collapse: collapse;
+    
+
+   }
+   #comparacao th,td{
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 19px;
+
+   }
+   #comparacao th{
+    background-color:#F9F9F9;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+   #comparacao tbody tr{
+    background-color:#ececec;
+    transition: all 0.5s ease;
+    background-color: #4A90E2;
+   }
+   
+  
